@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "31f4eaa4-ef2f-44d7-9bf9-f2eb688abe0f",
+		"name": "ssnpages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "1EEA6DC-JAM4DP2-PHVYPBN-V0XCJ9X",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Leena Temburne\",\"email\":\"leena.temb@example.com\",\"password\":\"leena@2021$#@\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "Add a new user"
+			},
+			"response": []
+		},
+		{
+			"name": "List Users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "1EEA6DC-JAM4DP2-PHVYPBN-V0XCJ9X",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "Display list of users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "1EEA6DC-JAM4DP2-PHVYPBN-V0XCJ9X",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/users/60468c866458f0132dc974d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"60468c866458f0132dc974d6"
+					]
+				},
+				"description": "Find a user account by Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User By Id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "1EEA6DC-JAM4DP2-PHVYPBN-V0XCJ9X",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Saurabh Pawar\",\"email\":\"saurabh.pawar@example.com\",\"password\":\"TechSau2021$\",\"status\":\"AcTIve\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/60468c866458f0132dc974d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"60468c866458f0132dc974d6"
+					]
+				},
+				"description": "User a user account by Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "1EEA6DC-JAM4DP2-PHVYPBN-V0XCJ9X",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/users/60468c866458f0132dc974d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"60468c866458f0132dc974d6"
+					]
+				},
+				"description": "Delete a user account by Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Page",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "1EEA6DC-JAM4DP2-PHVYPBN-V0XCJ9X",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"The Prisoner of Askaban\",\"content\":\"Page Content of Prisoner of Askaban\",\"keywords\":[\"Prisoner\",\"Askaban\"],\"createdby\":\"604734276a91d54134fe0e6b\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/pages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Pages",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "1EEA6DC-JAM4DP2-PHVYPBN-V0XCJ9X",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/pages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pages"
+					]
+				},
+				"description": "Display list of pages"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Page By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "1EEA6DC-JAM4DP2-PHVYPBN-V0XCJ9X",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/pages/60479fd71ac5d7adf8ce218e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pages",
+						"60479fd71ac5d7adf8ce218e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Page By Id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "1EEA6DC-JAM4DP2-PHVYPBN-V0XCJ9X",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"The Fox and the Hound\",\"content\":\"Content for Fox and the Hound\",\"createdby\":\"604734e222eb3503e0f33613\",\"keywords\":[\"Fox\",\"Hound\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/pages/60479fd71ac5d7adf8ce218e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pages",
+						"60479fd71ac5d7adf8ce218e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Page By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "1EEA6DC-JAM4DP2-PHVYPBN-V0XCJ9X",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/pages/60479fd71ac5d7adf8ce218e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pages",
+						"60479fd71ac5d7adf8ce218e"
+					]
+				},
+				"description": "Delete a page by Id"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ssnpages",
+  "version": "1.0.0",
+  "author": "Santosh Nair",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.4.1",
+    "http-errors": "~1.6.3",
+    "log4js": "^6.3.0",
+    "mongo-sanitize": "^1.1.0",
+    "mongoose": "^5.11.19",
+    "mongoose-bcrypt": "^1.9.0",
+    "morgan": "^1.10.0",
+    "properties-reader": "^2.2.0",
+    "pug": "2.0.0-beta11",
+    "rotating-file-stream": "^2.1.5",
+    "validator": "^13.5.2"
+  }
+}

@@ -1,0 +1,4 @@
+extends layout
+
+block content
+    p Welcome #{user.name}, <a href="/logout" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>

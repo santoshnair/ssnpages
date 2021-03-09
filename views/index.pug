@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Version : #{version}
+    <div class="login">
+    if haserror
+      <div class="error-message"> <i class="fa fa-exclamation-circle"></i> #{errormsg} </div>
+    <form id="login" method="post" action="/login">
+    <label><b>User Name
+    </b>
+    </label>
+    <input type="text" name="Uname" id="Uname" placeholder="Email">
+    <br><br>
+    <label><b>Password
+    </b>
+    </label>
+    <input type="Password" name="Pass" id="Pass" placeholder="Password">
+    <br><br>
+    <input type="submit" name="log" id="log" value="Sign In">
+    </form>
