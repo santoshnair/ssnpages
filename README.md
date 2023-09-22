@@ -1,6 +1,6 @@
 **Steps  to deploy in local machine**
 
-1) Check out the code from github at
+1) Check out the code from github
 
 2) Once you check out the code navigate into the root directory on the terminal
 
