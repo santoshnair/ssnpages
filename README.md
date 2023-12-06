@@ -2,7 +2,7 @@
 
 1) Check out the code from github
 
-2) Once you check out the code navigate into the root directory on the terminal
+2) Once you check out the code, navigate into the root directory on the terminal
 
 3) Using npm run the command "npm install"
 
@@ -14,27 +14,27 @@
 
 7) The routes for user CRUD operation is to be called with /users path
 
-    POST /users
-    
-    GET /users
-    
-    GET /users/:userid
-    
-    PUT /users/:userid
-    
-    DELETE /users/:userid (Does soft delete of user i.e Status:Inactive)
+    **POST** /users
+
+   **GET** /users
+
+   **GET** /users/:userid
+
+   **PUT** /users/:userid
+
+   **DELETE** /users/:userid (Does soft delete of user i.e Status:Inactive)
 
 8) the routes for page CRUD operation is to be called with /users path
 
-    POST /pages
-    
-    GET /pages
-    
-    GET /pages/:userid
-    
-    PUT /pages/:userid
-    
-    DELETE /pages/:userid   (Does hard delete for the Page record)
+   **POST** /pages
+
+   **GET** /pages
+
+   **GET** /pages/:userid
+
+   **PUT** /pages/:userid
+
+   **DELETE** /pages/:userid   (Does hard delete for the Page record)
     
 9) The application with bind to the default port 3000, you can change the port in the application.properties file for the key "**app.http.port**"
 
