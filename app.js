@@ -74,6 +74,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
 // middleware to check apikey authentication for users and pages routes
 function authenticateRequest(req, res, next){
     //authenticate Request
