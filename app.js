@@ -94,7 +94,9 @@ function authenticateRequest(req, res, next){
     }
     next();
 }
+
 app.listen(port,function(){
     console.log('SSN Pages is listening at port ' + port);
 });
+
 module.exports = app;
